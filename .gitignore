@@ -161,3 +161,50 @@ cython_debug/
 
 .ruff_cache/
 *.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# Large datasets
+data/
+
+# Generated tokenizer outputs
+results/
+tinystories_tokenizer/
+owt_tokenizer/
+
+# Profiling files
+*.prof
+
+# pdf
+cs336_assignment1_basics.pdf
+
+# bash tools
+publish_assignment1.sh
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Large compressed files
+*.gz
+
+# Jupyter
+.ipynb_checkpoints/
