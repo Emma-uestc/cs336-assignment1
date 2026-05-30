@@ -171,7 +171,7 @@ pair_counts.update(self.count_pairs(word_counts, word_encodings))
 ```
 
 ## 测试
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260517142643.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260517142643.png)
 三个测试点都过了，说明相比朴素版，效率提升了。
 ## Tinystories 数据集上训练  
 这个题目有两个要求  
@@ -349,11 +349,11 @@ uv run python ./train_bpe_tinystories.py \
 - 训练中
 运行时，顺便查看了下 CPU,内存，我略显局促的内存被打满了，确实只有一个 CPU 在跑，符合单线程的预期，后面优化的点就是多线程处理预分词。
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518153612.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518153612.png)
 
 - 训练结果
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518160609.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518160609.png)
 
 ---
 ### 结果分析
@@ -392,14 +392,14 @@ uv run snakeviz --server training.prof
 
 3. 浏览器打开 snakeviz 可视化
 - 概览：
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518162853.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518162853.png)
 
 - 图表：
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518163323.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518163323.png)
 
 - 打印到终端
 如果本地不方便浏览器打开，可以使用 python 内置的 pstats 查看文本报告
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518163531.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518163531.png)
 
 ---
 - **瓶颈分析&优化方向**

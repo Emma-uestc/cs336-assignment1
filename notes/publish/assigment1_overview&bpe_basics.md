@@ -211,7 +211,7 @@ def decode_utf8_bytes_to_str_wrong(bytestring: bytes):
 
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260512142337.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260512142337.png)
 
 ```bash
 >>> decode_utf8_bytes_to_str_wrong("你".encode("utf-8"))

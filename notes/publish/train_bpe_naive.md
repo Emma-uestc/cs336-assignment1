@@ -14,7 +14,7 @@ cd assignment1-basics
 uv sync
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260514110651.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260514110651.png)
 
 2. 激活虚拟环境
 
@@ -48,7 +48,7 @@ python -c "import torch; print(f'Torch Version: {torch.__version__}'); print(f'C
 
 *   Device Name: NVIDIA GeForce RTX 2060...
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260514111345.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260514111345.png)
 
 运行代码可以先 `source` 激活环境，然后在该环境内执行 `python <python_file_path>`，
 
@@ -259,7 +259,7 @@ Top 10 most frequent words:
         word_encodings = {word: list(word.encode('utf-8')) for word in word_counts}
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260515140052.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260515140052.png)
 ## 迭代训练   
 到了我们的核心训练环节了，由 [[assigment1_overview&bpe_basics#2.4 BPE Tokenizer Training]] 分析，该循环分为以下步骤：
 a. 建立一个大字典，统计相邻字节对频率
@@ -308,7 +308,7 @@ pair_counts: dict[tuple[int,int], int]: 相邻字节对频率
         return dict(pair_counts)
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260515140355.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260515140355.png)
 
 b.迭代合并
   1. 寻找出现最频繁的字节对
@@ -578,9 +578,9 @@ class BPETrainer_Naive:
 
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260515153124.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260515153124.png)
 框的是 ID 为 256 的特殊 token.
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260515153652.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260515153652.png)
 ### **测试**  
 修改 `adapters.run_train_bpe`，添加我们的实现，然后执行 `uv run pytest tests/test_train_bpe.py`
 符合预期，时间复杂度高，超时,也是我们接下来要优化的目标
@@ -612,4 +612,4 @@ tests/test_train_bpe.py:24: AssertionError
 FAILED tests/test_train_bpe.py::test_train_bpe_speed - assert (1778838328.7780395 - 1778838326.5302143) < 1.5
 ```
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260515175324.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260515175324.png)

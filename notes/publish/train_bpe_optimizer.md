@@ -215,17 +215,17 @@ if merge_idx < 5:  # 只打印前5次合并
 - 训练中
 还是单线程，只有一个 cpu 在跑满，其它空闲，内存依然拉满。
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518221314.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518221314.png)
 
 - 结果概览
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518223107.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518223107.png)
 
 ## 性能分析（优化版）
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518230905.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518230905.png)
 
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260518231122.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260518231122.png)
 
 ---
 ### profile 数据解读
@@ -257,7 +257,7 @@ re.split                  34s     ← special token 切分
 ---
 #### 对比  
 > 还是把 profile 数据给了 AI，让其给出”看图说话“的分析方式
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260519105704.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260519105704.png)
 
 ### 下一步优化方向：多进程并行 pretokenize
 
@@ -298,6 +298,6 @@ re.split                  34s     ← special token 切分
 
 
 
-![](https://emma-uestc.github.io/cs336-assignment1/notes/_assets/Pasted-image-20260520212400.png)
+![](https://raw.githubusercontent.com/Emma-uestc/cs336-assignment1/main/images/Pasted-image-20260520212400.png)
 
 
