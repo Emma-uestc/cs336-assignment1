@@ -207,4 +207,4 @@ Thumbs.db
 *.gz
 
 # Jupyter
-.ipynb_checkpoints/
+.ipynb_checkpoints/1.txt
